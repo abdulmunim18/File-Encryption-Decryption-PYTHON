@@ -10,7 +10,8 @@ class Encryptor:
 
     def generate_key(self):
         if self.algorithm == 'AES':
-            return get_random_bytes(32)  # 256-bit key
+            return get_random_bytes
+            bytes(32)  # 256-bit key
         elif self.algorithm == 'DES':
             return get_random_bytes(8)  # 64-bit key
         elif self.algorithm == '3DES':
